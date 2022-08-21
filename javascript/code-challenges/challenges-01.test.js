@@ -52,7 +52,6 @@ const allUpperCase = (arr) => {
   arr.forEach(element => {
   let upper = element.toUpperCase();
     localArray.push(upper);
-
   });return localArray;
 };
 
