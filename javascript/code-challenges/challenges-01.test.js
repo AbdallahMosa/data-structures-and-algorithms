@@ -71,13 +71,13 @@ const greeting = (word) => {
   return upperAndEx;
 };
 
-const speaker = (words, callback) => {
+const speaker = (words, greeting) => {
   // Solution code here...
 
   let localArray = [];
   words.forEach(element => {
-    let callback = greeting(element);
-    localArray.push(callback);
+    // let callback = greeting(element);
+    localArray.push(greeting(element));
 
   });return localArray;
 };
@@ -105,6 +105,11 @@ const addValues = (arr, value) => {
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
+  arr.forEach(element => {
+    callback(num , times)
+    
+  });return arr ; 
+
 };
 
 /* ------------------------------------------------------------------------------------------------
