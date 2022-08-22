@@ -14,7 +14,7 @@ const addOne = (arr) => {
   arr.forEach(element => {
     let count = element +1;
     localArray.push(count);
-
+// add
   }); return localArray;
 };
 
@@ -76,8 +76,8 @@ const speaker = (words, callback) => {
 
   let localArray = [];
   words.forEach(element => {
-    let uper = greeting(callback);
-    localArray.push(uper);
+    let callback = greeting(element);
+    localArray.push(callback);
 
   });return localArray;
 };
@@ -100,6 +100,7 @@ Return the modified array.
 
 const addValues = (arr, value) => {
   // Solution code here...
+  arr.push(value)
 };
 
 const addNumbers = (num, arr, times, callback) => {
@@ -132,7 +133,7 @@ const createList = (availableItems) => {
 
     localArray.push(element);
     }
-   
+
 
   }); return localArray;
 };
