@@ -167,13 +167,10 @@ const hasChildrenValues = (arr, character) => {
 
 
 	if(array.filter (item =>item.name === character).length > 0){
-
+// console.log(array) 
 		return true
 
-	} else {
-
-		return false
-	}
+	} else return false
 
 };
 
